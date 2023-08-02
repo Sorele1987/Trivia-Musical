@@ -1,0 +1,92 @@
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: #fce4ec;
+    --color-primary: #9c27b0;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 2rem;
+}
+
+
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/426/942/non_2x/violin-classical-music-instrument-with-on-purple-splotch-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1.5;
+    background-color: rgba(228, 252, 252, 0.825);
+}
+
+
+  /* Page structure */
+.wrapper {
+    min-height: var(--wrapper-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+
+  /* Very light scaling for our illustration */
+.title {
+    color: #f06292;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105%;
+    margin: -3;
+}
+
+  /* Button - Add it from the README instructions */
+button,
+input {
+    font-family: inherit;
+    font-size: 100%;
+    background: #f8bbd0;
+    border: 3px solid #ab47bc;
+    box-sizing: border-box;
+    border-radius: 80px;
+    padding: 0.5rem 1rem;
+    transition: 500ms;
+    display: block;
+    margin: 10px auto;
+}
+
+  /* Subheading */
+h2 {
+    color: #515da8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
+
+.trivializate-box {
+    background-color: #f06292; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 24px; /* Tamaño del texto */
+    width: 200px; /* Ancho del cuadro */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

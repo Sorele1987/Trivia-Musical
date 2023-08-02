@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia musical</title>
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-purple-musical-notes-image_2281302.jpg">
+    <link rel="stylesheet" href="/style.css" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+    <h1 class="title">Trivia musical</h1>
+    <div class="mensaje-bienvenida">
+    <h2><b>¡Bienvenid@, <span id="nombreArtista"></span>, vamos a aprender de música!</b></h2>
+    <p></p>
+    
+    <h2>Pregunta 1: ¿qué tipo de  instrumento musical es el cencerro?</h2>   
+    <p></p>
+    
+    <img src="https://www.ecured.cu/images/8/8e/Campana-o-cencerro-de-mano.jpg"> 
+    
+    <div class="question"> 
+        
+    <button onclick="checkRespuesta(this, 'Pregunta 1', 'Idiófono')"><b>Idiófono</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 1', 'Membranófono')"><b>Membranófono</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 1', 'Cordófono')"><b>Cordófono</b></button>
+    <p></p>
+    
+    <div id="resultado-pregunta-1"></div>
+    </div>
+    
+    <h2>Pregunta 2: ¿cuál es la relativa menor de do mayor?</h2>
+    <p></p>
+    
+    <img src="https://img.freepik.com/vector-premium/notas-musicales-lineas-dibujo-ondas-sonoras-musicales_578506-484.jpg?w=996"> 
+    
+    <div class="question">
+    
+    <button onclick="checkRespuesta(this, 'Pregunta 2', 'Re Mayor')"><b>Re Mayor</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 2', 'La Menor')"><b>La Menor</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 2', 'Re Menor')"><b>Re Menor</b></button>
+    <p></p>
+    
+    <div id="resultado-pregunta-2"></div>
+    
+    <h2>Pregunta 3: ¿cómo se llama este instrumento?</h2>
+    <p></p>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Charango_boliviano.JPG"> 
+    
+    <div class="question">
+    
+    <button onclick="checkRespuesta(this, 'Pregunta 3', 'Guitarra')"><b>Guitarra</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 3', 'Charango')"><b>Charango</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 3', 'Violín')"><b>Violín</b></button>
+    <p></p>
+    
+        <div id="resultado-pregunta-3"></div>
+        </div>
+    </div>
+    </div>
+    <p class="trivializate-box"><a href="index.html">Juega de nuevo</a></p>
+    <script src="/script.js" defer></script>
+</div>
+</body> 
+</html>
+

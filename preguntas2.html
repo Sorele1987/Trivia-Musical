@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia musical</title>
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-purple-musical-notes-image_2281302.jpg">
+    <link rel="stylesheet" href="/style.css" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+    <h1 class="title">Trivia musical</h1>
+    <div class="mensaje-bienvenida">
+    <h2><b>¡Bienvenid@, <span id="name"></span>, vamos a aprender de música!</b></h2>
+    <p></p>
+    
+    <h2>Pregunta 1: ¿cuál era el instrumento musical que Mozart más odiaba?</h2>   
+    <p></p>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/468px-Wolfgang-amadeus-mozart_1.jpg">
+    
+    <div class="question"> 
+    
+    <button onclick="checkRespuesta(this, 'Pregunta 4', 'Cello')"><b>Cello</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 4', 'Flauta')"><b>Flauta</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 4', 'Guitarra')"><b>Guitarra</b></button>
+    <p></p>
+    
+    <div id="resultado-pregunta-4"></div>
+    </div>
+    
+    
+    <h2>Pregunta 2: ¿A qué período musical pertenece Bach?</h2>
+    <p></p>
+    
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYZGRgaGhweGhwaGhwaHBocHBwaHBocHBwcIS4lHCErIRoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISGjQhISExNDExMTQ0NDQ0NDQ0NDQ0MTQ0NDQxNDQ0NDQxNDQ0NDQ0ND80PzQ0Pz80NDQ0NDE0P//AABEIAKgBKwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAEDBAYCB//EADkQAAEDAgQEBAUDAwMFAQAAAAEAAhEDIQQSMUEFUWFxIoGR8AYTobHRMsHhQlLxFIKSFSNicrIH/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAgEQEBAQEAAgMBAAMAAAAAAAAAAQIRITEDEkFRIjJC/9oADAMBAAIRAxEAPwDy1JMU6RmlMlC6QHIN1awTJeBzVcBF+AU/Hm5AqdXkOTy1OAwr8oJAaBuefYboizDsa3M8l5J8IEgRpPbpKp4bE+Bwi8knnB5LpmKzNiR2MWXHWq9XoMLQ50g7Bp5iJJXFKkAwx1gm53gExdVMfVeWyGONp/SfI9ldYXAHwiIG0iIQQdi6TokkD/cNfJD3O/SNybK5jJzGzeik4Jgpd817TDf0ToT/AHdQEelQW4VRDQPXzRoP2WawGMzYgtH6SHGBzG4WiYubcvTs4nDkznpZ4UDqo/uidNEpCjmoJVV8DurBBdo4Edv3VbGU949D75qjQYl5/wAKJr5HldRuqnnPRwTOJ6fX8J8NxiNPVBcToUZAJmSPT8oViafdaZIExb4gotRfmpggkbEc+qFY+mjHBKjX08h5W7wtrf8AHpc6HVGWJN1Ve2Ned+yK4/DFm0j3qEKeJVZvSvhq/lNeyGgRFvTRZPiWDNN//jt+CivA8cZyctOoRbiuDD2HsfLkVnnVxritc1GKj35JnfspXUyCQdQfwrfCcOH1QDcC8c4iF0XXJ1nz8DS0xcKMrU8fwsMmOqzBCMa+06NZ44XJ2XXJMVaXICS6ASQDEJ8hSIT5SqCsU6SSEkkExSCAcI5wYEAkHb7oHCPcDFyDprKj5P8AVWRiixzwTIbe5Gp+nfor3DaDcznalgETG51sNgq7qdgW+wpcM5zXSCL6jv8AZclaLWLreBzQfEbkz2XeIY+mzMx4eINjuO+oQvH5u+++303RnBtJw7Jv4IGm0jZTfByRR4VQFd8hsMB8UkmI/p6z9kQ+IMV8tmVvLQfwq/w875dWqwmzm5x/tMHzhw9FQ4vig54k/wBU+QMpXzVSeRH4ewRE1HiHOFgdm/krRMez+5v/ACCzwr5gHPOujR71VR2JbMWlTzt6LOi/HuLfLZLBnOnQdSssH4qocwflB2FgFYxuPEZWxJgAdTZF7Ku/Weh9QqnhcSP63eTv2VtmKqt8LiTzzfdXs+yd9W0GPupt77g4pvqh21j7snewZ4i3c7qelQBEBRYipkJ96QlKEOPrhjSGgT298lmMRjqpkzblCKYnFZjGp2Ch+QdxvoNvytM8z7guegrsU4+F413TYDFuputzRDH4bMwmO3khAs4LpzzURe5r0DDN+bTBcJkXCA8R4aaZLgZbt0nWVY4NxEgBs3H1HRaVzPmMzGNPVc/bmqs68/w1bI9rzzv2Nj76LdUXh7C0m4G+iy/FuDxJYDbVv3haP4cE02ONyWD7Qn8mpqSwp4Zfj2EyuzDQ6/sq/BXH5zQBrm9Muq1nGMKC13VZngVMiuCATlDp6Wj7qs67mz+C++j3Gmf9skj3Cw5W8+ICCzXZYSNVXweqWkZTKQhNlXR1DhOGpyE0IJyQlB6p4Tz3QFVIpJiqSdKEinCAQWg4YMrdNdfNAqbbhaKjLQPeyy+T1xWRVz7CDpCnZQNgTGg6/VUcHeHH9IIRB1beRrPpzXPWjvFNAaQL311Pa6ucGpSwsLjDTaNIN7+cqjUfMOae4tbsfRWvh+c7yToBYCReeXb6qNejiHilLI7O0Xb9t1n6tHPVadgJP7LacVpgsPbWPysYw5Khm4DYCMVU9Lpxpc/5bGFztA0e7BW8XwgNAmfmGMxB8M8gOQsPJF/higBRD8oBeXGYuRJy/RXKtLxSQlrXL4HWbwHCAwZ3jM4ExzCfFYwMJJIEbn9kYxVhbVZvHYMuexz5yNBGl5Orj5/ZGf8AK+T8/iOjxpr3BrRdxgF5Il3IED9+Smfi3teWPGU95B7E6KnQ+HSHtc6pNMOBH6r6baAw1s9kTxeFzvGWRPPXv0Wmpmeiz39FeDEkEnSbKn8QSAYGxhG6dMMaByVDjDc7dO/5WE99HfLN4HKAJ331J5gAbrl1cPJFIBxG2cZv+I8PoufkO8YkXblnQgHYIXhsM9j2vc79Fm9pJgeZOq6JmXyV73wtHFTLSIPuUKxFirlRxe/PzJ72gKrjmwYWuJylpZwTzmbGx6rf4DFAsBabe7Lz3Au+iOcJxmR1z4SfTaVl8ue+vwpWpqBrpVSg75fh2k/W/wByVKTEAe+qZ9KL8vusOtJHdSu1wIJieah4Dw8Mzm2ao70aNPrPqpxRBHPmndUy32gW/lOVNgX8Sv8AT+Fi0f47is1hugJhdHwzkTpxKdIaJLZCMtSC7IXKYMuIClK4hAVSklKUq0EU4TJ0G6YbrScEpZ5zGwExz/hZpq0XDqpa1rhyIKy+T0eRaq+W5dIJgiwvHJcMqWOY6abmO6qvqNNwYTUabnkkGG6ZjYdha6w40EMDSc+TYNbvO52tqjPCqZDnxpbxRF50HlKqcKo+DIDeTMffRH6VDK3KPMnnuVnq+Agx7/B/MrC4pk1WggkEgEAgEidJ2XoNehInostj8G0SW6zJdyj2Es3is+hZvFXtADWNaAIiJgaATItC7/1L33cYHSEBZxEAXiRrMWKon4jgx1PIJzFp8aipVds6e4Cp4zFZhBEdRZBGcYe52ZoJYLTbXf8AZEW8RzCAwn/b+6VlyqQzMK9ws+020A72RTh+FDb/AH1PU9Oiq4KmRLnnX+nYfk6eimdXkwLDdK6tF6JVSDuFRxJOVRvAE+P6/wAKzhnsIMkW92lHOJZqrVyvvpv1BUWNogAOaYEWnkrHG2AE/S+3ZV+HVczIiSw27Fad5OxUQ8NwrnHM7QaW6zYIl/06gf1Mzd3H9k9fHWgtjy1+iEYjiD805SGCfPsjutUXP9HKWHYyGsa0A7dVM/DMiSxvoFkaPEHOfrAGiKVuIEMMkJazqFOVrqNIZGO5tB9QP5UWId5XCbC4tuRgGgAHpZPVaHTJ9nr6LH9KJ8M8SuOJtBZqZ6LrhrBH3U+KYL29+yqhfrA8VZeY53/P1QstWi4nhrkGYlAi266/j144jU8oQxdLsflI9lfUuY3HvZRkKQG8JimHEJZe66K4TCmEoTwkrQZOlCQQHQCM4F/gjVBgieBkkAKNzwrIjToF0wLDfTyRSkQGtBsIi1o9/uoKLS1hbv08lEapB3g6jXuua+WjT/D+FgF5vJht9hqfM/ZGnCZ9EN4PUBosLeRHnLkQY0+SyvsJC21x9UJ4lQ8Bi/RFiqmOHhKUOPP62Dc97pOURJG5PTZd8H4fTDQXNDnm5Lr/AE2Vp5ioJ/ug+dkxdkc4bTPrdaXV5xpydEsPQZsGjyCsZ2t5FBW1HuMMEjmdPyVcbg3H9TzHRsfVxKjn9PrvHcRAkmOy7wMPbDrE310VKpw+kTJBd1c51usAwFUZiBSeWZrWIknTlKczLPBW0Vx3BXuuyr6z9UFrCvSJDiSOhRvD8SbsR6hR4rEZtpVS2eKnlZfF41zucq7wGmQHOdYW39SrdamyJiCqrXFxDGmOZ5D391dsueSCdl6NB4Isfqh3EIhXsJw1kf1dy535hR1uHNIM5iO5/KznJVsiBD1cY8A6D0RAfD2fxNfB5ESLdQuMNw1wrMY4WJvHIAk/b6rf75s9sbLKu8H+bfIyWxYmwHmVocHQaXQ+SYm8Qe0d90soFhYdPouqBh8nQX8ly6vb1pzwkoHI8t9JVquNz77KrjHgPB5gKR9UZR2SiQ7idERZZDFU4M+q2dd2YQs5jKcONrLXGuFqBBK4cpKrMv1XAbbuuiIcEJz79Ak790mt2VEYrmF0R78lzCYU0gkkFaDymlJJBnRbg5E3QoK7gH2PdTv0efY/WqnUG+2vP/K5aXVDAFgN47nkh5rlE+HPytd1XNZxo03Am5aDRqZdMf8AsUWpvtfZCeF2pMGsyfqfqiLHiYWN9hPKqY9/hKsZkM4pV8J6Jie2XxrpJsuW4oPfcRNunmVFiHSSq+HdY8xp5K5PDQfY3yUj8ZlBEXHv8IS/G+GdLc/VDH4p7zDbDmlMWi2Rb4jxgMkCSeQ080Jw7vmOzv30idAiWF4e0AyJJG6GPoupG05Z9FrmZ5yey829osOHsF5d3lN/pnbVHed/x0VihUzDof3XLY9Poo8qsQuwhP6nuI9FWdTdQcHtl7T6jf6omwB3cmOcTG/dLFDKw9D7+yfRZ1xT4o6JcHQr1LiLXCAVQrgZB2QLEOgkgkdkTE0m6sb+g9oAj15807KANZr+Tf8A6n8FYvA8beyA+45jVavhnEWPOYOmSJ56ER9VnrGs+ympfQx8uwso2sglO2uLX805cDuOSjhqWKMOHu14T06uoTY69+Q/dVfmbpyG7qPhDMfTkq+8iFXLZ6JzwAfFYYxKO8I4LS+U4vIeajQJA/RzyzvMX6JDC5nBugJuj2HwjGMGUADfr36q/vecZ6jznE0CxzmO1a4gxzBUXNEPi2GVvDqdQemh8xHohdOqD3XRPM6jp36+qeUzkoCYUkySQWiCTpoThBnhTYd+U9FDCdqVEFaLC8hrRJOgHQEnXoCitZvhgW0+wgK3/wDn+BDnPqvAyiWMnckeO3IAgf7iinFcMwVAxojLoNsv9I9ZXNvUl40nk+CfDWNP9LQPTU+qIU6hPbsqFFh5T3/wrXzLLFXE3zSEH4riLRup8TiIEyPK3qhFfES6UzkVH0SGkndDKDonzRDH4uQffv8AlB6r8rY3K0zLRakzF5AGg+qK4fC5bEKhw+AjdOHRPsQjV54hSJMPRvKevgQ6VaY0f4U1Niy6rrPNo/LzMJ/9fX2Fy0eI/wBrvduaM8XwWZuYahBXvsOkfZXm9VPKRggcjI8r6pY+p4cp6fZQMxGrlSfWLnKpOi+Fmq/whB8SdVfrvshtQrX44y1TNU+HrOYczSQeirgqVaWMo0eE4+0gB/hP0/hFmY0EAgrBypaVdzdHEdNllr4Z+NJu/rdPxQO+2/voqfzdtkAo13kiDc2sNeyI06D8smeo39FlccP7RdfXEczyVrA4dxuYJ5cv5uh+Gc6Y8I52v6rR8KokGYsfU6GymqtTYXBRBI0vHM81NiqxYM2YQALGFbcIFrH1WW+M8eGU8ls1S3YC5I6befoZz28Z2shx/G/OrveLtmG9gAJ8yCfNDmlME67ZOTjNOyvsfVTZgqKUouTlOkUydMjpgkkgzhT4Kjnexk5c7mtk7SQJUC6a6CCNRcJUPbMBg2UmCmwQxogczG56k3lUPiBzWMBDJeXBoI+uY8gAp+CcQFeiyoIGYXHJwsR6ooxnRcN73yqVnGN8I2O+6rYm2ui0OPw4LfB+vUdY1ErKYquC12xGoOoO4ukuXoTxHFEGAf8ACGtxBunxtaXFC8biiwZW6ka8h06rbGOi64uYioB1O4H2PJDjULnSVWoVFfp0A+I/V91r9fqj7dEcMwQrTZH5VKkxzLOBCu0XjssdNZVihjSDB+qJYfFgkXCpNohwiB35Ks6m6nppt+FnyUNL80QgOPwgklpidlAziRGpXFXHzqnnNginUouE6KANhSVsTKo1KpK3zm0tV1WeqjiunOXIW2Zxlq9Muw/8qOU4CZOmqemxQ0xdXaTLqdUQT4Q2HF0HSx2HdGp9SgeBc+YZHODpy7o0GEgDf3osNKdNpZyANea09GkAADry/HNDeGYeG53fqzGCeUR+5RUPBibxPX6LLXsz4slviHLTrz+y8o4/xE16znkiBDWxpDbT5mT5rd/GfFPlUCwRnqS1nMNI8bvQgDqV5iAt/hz/ANVNpJ00Jyt0kClKYJ0A6QKSUIMkgkU4CCOmSToDXfAHFslQ0XHw1Lt5B4/IH0XpjKpj7Lwek9zXBzTBBBB5EXC9i4BxMVqLKo1I8Q1yuFnD1+65vmxy/Y5RCq3YakRP+dVg/iCk6lVdmfnFSXTlLbkmRytGy3GJeIkmD3AH4QTjfDm4hrWl5YWmZidbERIsss+1y8ef1jJUOP4O4MdVJuILm8h36IszBmnVc14nIYtfMT+kjpeURqUwWPDvFLdDBaOp53Ws19b4GvLz5uqP8IZJCC4jDuY4sdEjkZWi+Fagzhp3IW2/XURvsBw8Pp5XtB5GEG4p8IvaS6kcw1y7rYcOhoiJG0ajsrxaDP1j99wuTtipXk/zH0yWvaWnebKduMadV6Jj+GU6g8bA7rv6rM8Q+EmXLJHY/sU+z9X9mUxBYdlRqMHNGsZ8O1GaO9RH1CDVcI9sggWWmeflH2VKhAUBKlfTdyUJplb5Ra5ddcrohJoVJOBZINTtKYoB2Ogq1TxQ3VROWzYXU2dHWw4BhJHzJBzAxbab/ZanC8LtmdpyG/fkh3wdgHsoD5rYOY5GnUNMfqGxnN9Fq8vh1lcu7ymoGgIiIHT3CmeWtYXugBok9ABJP0KsEEXt0j3qsJ8fcducMyLEGqRz1DB21PkNksZurwWsv8Q8UOIrufcM/SwcmDTzOp7oamlKV2ScnCOEYPBS1ge/NBJEtEhpAmDvJ9EIY6CCNjPotj/q2VG+H5eUgiCXvfu4Q2YjS+oIdESCp3bPQjK4nDZRImN525Ksr2LrTYE+LVpvlg2gnnqqWRVnvPIJIJQnATIycJFXuFZQ5znECxDZ2cQYMf1C2m6VvIFR1FwElrgOoIXC0WNxrXDLlaS4NlxERDGBzBA5t3iOQus6EpenZx0CtL8F8WNOr8px8FSAJsA/+k9J09FmJXQdvojWftOFHuD22GphDMc9xdlDRAAnQzOyo/DXFziKOZzpc2GvAG40ce4RZ7BsPWy47OXiwrE8OBJfvH1HNBMQ+DlcNTp19gFap1MAG8k6/wAe9kC4hg3Al+omeZCcDH/EHDGsiowmHOhwJk5iJkE3IVHh2JLHtcNijfHMKHtL85zMaSBq3r2J0nss5SC6c37Z8pvt7H8NcSa9jbyYmY8hPa60jGiLaN1/yvIfhTihY4MJgEiDMb6divUeF4zOwTaPEetzb6Ln3n604vOsIiT0t6qMsGkSZ1FkznwZ1kG3bT31Ujbef0lZmFY+gRoAeh/KzHE8MYnI0X5krbYlgJII0B+uyyfGXlhjQGCDG0EH0trzCqBlMRTCC4ypeFe4lxDYa73QR7l0Yl90WmlOmYE5WyDg6JPTSndogyFwuSUgUnjVBD/BviytRhr/APuMGx/UB0dv2PNeicK4/QxDQabpduw2e3u06jqJC8aTgxBGo0O6z18WdHK9O+KfiplBpZRdmrERIu2nbUnd3IbbrzEum+vM791yUlWczM5BadJIBIKiJOCnTIMgnzH2E0p5QDwmCSSCPCdj40SSQHbq1oAjmSZP2UMpJJAwK6lJJMCvw3xU0KoJ/Q7wv/Y+R/dem/OJ0SSXN83uKy5Dtp/zc/suCJBHvrdJJZmC8U4e3I4BohwI1i50vyWMxPA61JnzHhuW0wZIm17e5SSWvx6pVTY+CCCvRvhjjeduR36ot5JklXyScKNdhsRmB/8AEx9v5V3C7HoTO3u6SS5TU8fVABcTAEn7fsF578V8YBeGguMNvpq6evKEyS1+OS0Vjar5JK4aEkl1kcn36ppSSQRyUtkkkBykkkgGSJSSQCTFJJAaXhfCaLqbS6XPeCRcxAs6ACP0m53Ia7SyF8TwjWOLmElmZwBPQ2I6HZJJZS37H+KBSSSWoMmlJJAf/9k=">
+    
+    <div class="question">
+    
+    <button onclick="checkRespuesta(this, 'Pregunta 5', 'Romantico')"><b>Romántico</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 5', 'Clasico')"><b>Clásico</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 5', 'Barroco')"><b>Barroco</b></button>
+    <p></p>
+    
+    <div id="resultado-pregunta-5"></div>
+    
+    <h2>Pregunta 3: ¿En qué siglo se inventó el piano?</h2>
+    <p></p>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQprb6GwpjuPxmo8UdVcZJjr1ByCYjNB5b8fA&usqp=CAU">
+    
+    <div class="question">
+    
+    <button onclick="checkRespuesta(this, 'Pregunta 6', 'Siglo XVIII')"><b>Siglo XVIII</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 6', 'Siglo XIX')"><b>Siglo XIX</b></button>
+    <p></p>
+    <button onclick="checkRespuesta(this, 'Pregunta 6', 'Siglo XV')"><b>Siglo XV</b></button>
+    <p></p>
+    
+        <div id="resultado-pregunta-6"></div>
+        </div>
+    </div>
+    </div>
+    <p class="trivializate-box"><a href="index.html">Juega de nuevo</a></p>
+    <script src="/script.js" defer></script>
+</div>
+</body> 
+</html>
